@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins/";
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+input.btn-primary {
+  @include button-variant(
+    #655d91,
+    darken(#655d91, 7.5%),
+    darken(#655d91, 10%),
+    lighten(#655d91, 5%),
+    lighten(#655d91, 10%),
+    darken(#655d91, 30%)
+  );
+}
+
+input.btn-outline-primary {
+  @include button-outline-variant(
+    #655d91,
+    #655d91,
+    lighten(#655d91, 5%),
+    #655d91
+  );
+}
+
+a.btn-primary {
+  @include button-variant(
+    #655d91,
+    darken(#655d91, 7.5%),
+    darken(#655d91, 10%),
+    lighten(#655d91, 5%),
+    lighten(#655d91, 10%),
+    darken(#655d91, 30%)
+  );
+}
+
+a.btn-outline-primary {
+  @include button-outline-variant(
+    #655d91,
+    #655d91,
+    lighten(#655d91, 5%),
+    #655d91
+  );
+}
+
+button.btn-primary {
+  @include button-variant(
+    #655d91,
+    darken(#655d91, 7.5%),
+    darken(#655d91, 10%),
+    lighten(#655d91, 5%),
+    lighten(#655d91, 10%),
+    darken(#655d91, 30%)
+  );
+}
+
+button.btn-outline-primary {
+  @include button-outline-variant(
+    #655d91,
+    #655d91,
+    lighten(#655d91, 5%),
+    #655d91
+  );
+}
+input.btn.btn-primary {
+  cursor: pointer;
+}
+.navbar-nav li {
+  font-size: 2.5vh;
+}
+
+.navbar-nav > li {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
