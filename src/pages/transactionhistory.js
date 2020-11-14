@@ -37,6 +37,7 @@ export class transactionhistory extends Component {
           });
 
         this.setState({ isLoading: false });
+        console.log(parsedResponse);
       })
       .catch();
   }

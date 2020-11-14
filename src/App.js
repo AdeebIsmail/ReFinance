@@ -8,6 +8,7 @@ import LoginHome from "./pages/loginhome";
 import Categories from "./pages/categories";
 import Transaction from "./pages/transaction";
 import TransactionHistory from "./pages/transactionhistory";
+import Savings from "./pages/savings";
 
 import LoginHomeRoute from "./ProtectedRoutes/loginhomeroute";
 
@@ -31,6 +32,7 @@ function App(props) {
           component={TransactionHistory}
           exact
         />
+        <LoginHomeRoute path="/savings" component={Savings} exact />
       </Switch>
     </Router>
   );

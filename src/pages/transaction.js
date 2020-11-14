@@ -154,7 +154,7 @@ export class transaction extends Component {
                 .map((parsedResponse) => {
                   return (
                     <option
-                      className="list-group-item list-group-item-info"
+                      className="list-group-item list-group-item-dark"
                       style={{
                         textAlign: "center",
                       }}

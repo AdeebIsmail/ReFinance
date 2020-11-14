@@ -54,6 +54,11 @@ export default class loggedinnavbar extends Component {
                   Transaction History
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/savings">
+                  Savings
+                </a>
+              </li>
             </ul>
           </div>
         </nav>

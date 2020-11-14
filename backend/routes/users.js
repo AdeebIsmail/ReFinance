@@ -159,4 +159,60 @@ router.route("/transaction/update/:id").post((req, res) => {
   );
 });
 
+router.route("/savings/:id").post((req, res) => {
+  const saving = req.body.saving;
+  const goal = req.body.goal;
+  const amount = req.body.amount;
+  const id = req.params.id;
+
+  User.findById(id).then((users) =>
+    User.updateOne(
+      { email: users.email },
+      {
+        $addToSet: {
+          savings: {
+            saving: saving,
+            goal: goal,
+            amount: amount,
+          },
+        },
+      },
+      function (err, result) {
+        if (err) {
+          res.send(err);
+        } else {
+          res.send("It works");
+        }
+      }
+    )
+  );
+});
+
+router.route("/savings/get/:id").get((req, res) => {
+  User.findById(req.params.id)
+    .then((users) => res.json(users.savings))
+    .catch((err) => res.status(400).json("Error: " + err));
+});
+
+router.route("/savings/delete/:id").post((req, res) => {
+  User.findById(req.params.id)
+    .then((users) =>
+      User.update(
+        {
+          email: users.email,
+        },
+        { $pull: { savings: { _id: req.body.id } } },
+        { safe: true },
+        function (err, result) {
+          if (err) {
+            res.send(err);
+          } else {
+            res.send("It works" + result);
+          }
+        }
+      )
+    )
+    .catch((err) => res.status(400).json("Error: " + err));
+});
+
 module.exports = router;

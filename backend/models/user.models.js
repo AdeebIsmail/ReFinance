@@ -34,6 +34,15 @@ const userSchema = new Schema({
       category: String,
     },
   ],
+  savings: [
+    {
+      saving: String,
+
+      goal: Number,
+
+      amount: Number,
+    },
+  ],
 });
 
 const User = mongoose.model("User", userSchema);
