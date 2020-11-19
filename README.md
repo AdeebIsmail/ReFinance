@@ -1,3 +1,20 @@
+## ReFinance!
+
+Website for making a budget. 
+
+- Learn how to correctly finance by setting out a proper budget
+- Create savings, budgets and more!
+- View the amount of money you spend per day, month, and week!
+- Add and view your transactions
+
+Screenshots
+
+- Coming soon!
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
