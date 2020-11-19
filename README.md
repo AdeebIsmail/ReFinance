@@ -9,7 +9,7 @@ Website for making a budget.
 
 Screenshots
 
-- Coming soon!
+  
 
 
 
