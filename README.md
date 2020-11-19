@@ -9,6 +9,8 @@ Website for making a budget.
 
 Screenshots
 
+![image](https://user-images.githubusercontent.com/51217487/99621152-c2135680-29ec-11eb-926a-a18cb2c9038c.png)
+
   
 
 
