@@ -25,6 +25,10 @@
 - Backend with Node.js and Express
 - Stored in MongoDB with mongoose
 
+### Contributors
+
+- Stack Overflow
+
 
 
   
