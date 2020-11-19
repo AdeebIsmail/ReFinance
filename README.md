@@ -5,7 +5,7 @@ Website for making a budget.
 - Learn how to correctly finance by setting out a proper budget
 - Create savings, budgets and more!
 - View the amount of money you spend per day, month, and week!
-- Add and view your transactions
+- Add and view your transactions!
 
 Screenshots
 
