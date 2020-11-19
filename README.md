@@ -1,15 +1,31 @@
 ## ReFinance!
 
-Website for making a budget. 
+### Website for making a budget. 
 
 - Learn how to correctly finance by setting out a proper budget
 - Create savings, budgets and more!
 - View the amount of money you spend per day, month, and week!
 - Add and view your transactions!
 
-Screenshots
+### Screenshots
 
 ![image](https://user-images.githubusercontent.com/51217487/99621152-c2135680-29ec-11eb-926a-a18cb2c9038c.png)
+
+![image](https://user-images.githubusercontent.com/51217487/99622887-a27e2d00-29f0-11eb-8b13-487b37ed34d0.png)
+
+![image](https://user-images.githubusercontent.com/51217487/99622938-b75ac080-29f0-11eb-820e-1395fbd394b3.png)
+
+![image](https://user-images.githubusercontent.com/51217487/99622968-c3468280-29f0-11eb-9796-8ebd4e4173b6.png)
+
+![image](https://user-images.githubusercontent.com/51217487/99623033-de18f700-29f0-11eb-8bcd-096ab0e3a4db.png)
+
+### Technical Info
+
+- Made with React
+- Backend with Node.js and Express
+- Stored in MongoDB with mongoose
+
+
 
   
 
