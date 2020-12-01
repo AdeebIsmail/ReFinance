@@ -119,7 +119,14 @@ export class login extends Component {
               type="password"
               value={this.state.password}
             />
-            <small style={{ color: "red", marginLeft: "11rem" }}>
+            <small
+              style={{
+                color: "red",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               {this.state.errorText}
             </small>
           </div>

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
-import FadeInAnimation from "../components/fadein.components";
 import Background from "./84248.png";
 
 export class home extends Component {

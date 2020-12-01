@@ -57,7 +57,6 @@ export default class allcategories extends Component {
           .map((parsedResponse) => {
             list.push(parsedResponse);
           });
-        console.log(parsedResponse);
         this.setState({ isLoading: false });
       })
       .catch((err) => console.log(err));

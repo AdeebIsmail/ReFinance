@@ -215,4 +215,24 @@ router.route("/savings/delete/:id").post((req, res) => {
     .catch((err) => res.status(400).json("Error: " + err));
 });
 
+router.route("/savings/update/:id").post((req, res) => {
+  User.findOneAndUpdate(
+    { "savings._id": req.body.id },
+    {
+      $set: {
+        "savings.$.goal": req.body.goal,
+        "savings.$.amount": req.body.amount,
+        "savings.$.saving": req.body.saving,
+      },
+    },
+    function (err, result) {
+      if (err) {
+        res.send(err);
+      } else {
+        res.send("It works" + result);
+      }
+    }
+  );
+});
+
 module.exports = router;
